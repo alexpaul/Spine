@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		92935250FE3ED556A4DC5745 /* Pods_Spine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB5A20CE10DEF75F438345C4 /* Pods_Spine.framework */; };
 		C4C3041E1D8A1CB600DD8E31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C3041D1D8A1CB600DD8E31 /* AppDelegate.swift */; };
 		C4C304201D8A1CB600DD8E31 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C3041F1D8A1CB600DD8E31 /* ViewController.swift */; };
 		C4C304231D8A1CB600DD8E31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4C304211D8A1CB600DD8E31 /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D0F64F4515E96452A5D439B /* Pods-Spine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spine.release.xcconfig"; path = "Pods/Target Support Files/Pods-Spine/Pods-Spine.release.xcconfig"; sourceTree = "<group>"; };
+		3B29C1385DB8242DC3D71811 /* Pods-Spine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spine.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Spine/Pods-Spine.debug.xcconfig"; sourceTree = "<group>"; };
 		C4C3041A1D8A1CB600DD8E31 /* Spine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4C3041D1D8A1CB600DD8E31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4C3041F1D8A1CB600DD8E31 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		C4C304241D8A1CB600DD8E31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4C304271D8A1CB600DD8E31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C4C304291D8A1CB600DD8E31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB5A20CE10DEF75F438345C4 /* Pods_Spine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92935250FE3ED556A4DC5745 /* Pods_Spine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		275FD06ED9002FED85130247 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FB5A20CE10DEF75F438345C4 /* Pods_Spine.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7E55F9585194D61621D8FD11 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B29C1385DB8242DC3D71811 /* Pods-Spine.debug.xcconfig */,
+				0D0F64F4515E96452A5D439B /* Pods-Spine.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C4C304111D8A1CB600DD8E31 = {
 			isa = PBXGroup;
 			children = (
 				C4C3041C1D8A1CB600DD8E31 /* Spine */,
 				C4C3041B1D8A1CB600DD8E31 /* Products */,
+				7E55F9585194D61621D8FD11 /* Pods */,
+				275FD06ED9002FED85130247 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C4C3042C1D8A1CB600DD8E31 /* Build configuration list for PBXNativeTarget "Spine" */;
 			buildPhases = (
+				3E307BEF962FAACB9E090A80 /* [CP] Check Pods Manifest.lock */,
 				C4C304161D8A1CB600DD8E31 /* Sources */,
 				C4C304171D8A1CB600DD8E31 /* Frameworks */,
 				C4C304181D8A1CB600DD8E31 /* Resources */,
+				472CCE2681B6B1C6AD1924FB /* [CP] Embed Pods Frameworks */,
+				9C43CC9C07C4B766390DD6B7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3E307BEF962FAACB9E090A80 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		472CCE2681B6B1C6AD1924FB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Spine/Pods-Spine-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C43CC9C07C4B766390DD6B7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Spine/Pods-Spine-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C4C304161D8A1CB600DD8E31 /* Sources */ = {
@@ -257,6 +332,7 @@
 		};
 		C4C3042D1D8A1CB600DD8E31 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B29C1385DB8242DC3D71811 /* Pods-Spine.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ZEKMNK5YD3;
@@ -270,6 +346,7 @@
 		};
 		C4C3042E1D8A1CB600DD8E31 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D0F64F4515E96452A5D439B /* Pods-Spine.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ZEKMNK5YD3;
@@ -300,6 +377,7 @@
 				C4C3042E1D8A1CB600DD8E31 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
